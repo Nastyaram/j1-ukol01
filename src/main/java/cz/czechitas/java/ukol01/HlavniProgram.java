@@ -46,6 +46,54 @@ public class HlavniProgram {
       zofka.turnLeft(90);
 
     }
+
+    zofka.turnRight(150);
+    zofka.penUp();
+    zofka.move(100);
+    zofka.turnLeft(40);
+    zofka.move(100);
+
+    //domecek
+    for (int i = 0; i < 5; i++) {
+      domecek(zofka);
+    }
+
+    zofka.move(80);
+    zofka.turnRight(90);
+    zofka.move(150);
+    zofka.turnRight(270);
+
+    domecek(zofka);
+
+    zofka.turnLeft(180);
+    zofka.penUp();
+    zofka.move(800);
+    zofka.turnRight(180);
+
+    domecek(zofka);
+
+  }
+
+  private static void domecek(Turtle zofka) {
+    zofka.penDown();
+    zofka.move(40);
+    zofka.turnLeft(90);
+    zofka.move(70);
+    zofka.turnLeft(35);
+    zofka.move(35);
+    zofka.turnLeft(110);
+    zofka.move(35);
+    zofka.turnLeft(125);
+    zofka.move(40);
+    zofka.turnLeft(180);
+    zofka.penUp();
+    zofka.move(40);
+    zofka.turnLeft(90);
+    zofka.penDown();
+    zofka.move(70);
+    zofka.turnLeft(90);
+    zofka.penUp();
+    zofka.move(80);
   }
 
   private static void nakresliPrasatko(Turtle zofka) {
